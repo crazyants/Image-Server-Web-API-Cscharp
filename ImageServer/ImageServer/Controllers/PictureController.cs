@@ -86,7 +86,7 @@ namespace ImageServer.Controllers
             if (ValidPermission(username, token))
             {
                 var fileDir = physicalPath + "\\" + name;
-                bool isDeleted = new FoldersRepository().RemoveRecord(currFolder);
+                //bool isDeleted = new FoldersRepository().RemoveRecord(currFolder);
                 if (File.Exists(fileDir))
                 {
                     File.Delete(fileDir);
